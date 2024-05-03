@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommendation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Movie Recommendation</h1>
+        <div class="genres">
+            <label for="genre">Select Genre:</label>
+            <select id="genre">
+                <option value="action">Action</option>
+                <option value="comedy">Comedy</option>
+                <option value="drama">Drama</option>
+                <option value="horror">Horror</option>
+                <option value="sci-fi">Science Fiction</option>
+                <option value="thriller">Thriller</option>
+                <option value="tamil">Tamil</option>
+                <!-- Add more genres as needed -->
+            </select>
+            <button onclick="getRecommendation()">Get Recommendation</button>
+        </div>
+        <div id="recommendation"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
